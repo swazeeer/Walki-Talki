@@ -27,6 +27,7 @@ public class Receiver implements Runnable {
 			datagramSocket = new DatagramSocket(PORT);
 		}catch(SocketException e) {
 			e.printStackTrace();
+			//test
 		}
 	}
 	
