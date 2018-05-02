@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="70.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <SplitPane orientation="VERTICAL" prefHeight="77.0" prefWidth="375.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="91.0" prefWidth="373.0">
+               <children>
+                  <Button fx:id="talkButton" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onMousePressed="#startTalk" onMouseReleased="#stopTalk" prefHeight="29.0" prefWidth="130.0" text="TALK" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="discButton" layoutX="229.0" layoutY="27.0" mnemonicParsing="false" onAction="#toggleDisconnect" prefHeight="29.0" prefWidth="130.0" text="DISCONNECT" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

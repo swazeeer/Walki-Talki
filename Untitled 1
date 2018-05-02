@@ -1,0 +1,41 @@
+notesaudio system contains:
+
+- mixers:  in java sound api devices represented by mixer objects
+	mixers can handle one or more streams of audio input and output
+	a microphone input on a sound card is not itself considered a device
+	but rather a port into or out of a mixer.
+	
+- lines: path for moving audio into or out of hte system.
+	input and output ports are lines
+	lines get audio output and form and input into a mixer
+	
+- files and streams: can convert audio files to audio streams
+
+
+data format represented by AudioFormat object
+file format represented by AudioFileFormat object
+
+a files content can be accessed through a AudioInputStream object
+	encapsulates a series of bytes that can be read sequentially
+	
+	
+device: a software interface to a physical i/o device
+ex) a sound-input device can represent the input capabilities of a 
+sound card such as a mic or a digital audio input
+
+
+clip: a mixer input into which you can load audio data prior to playback
+sourcedataline : mixer input that accepts a real-time stream of audio data
+targetdataline: mixer output 
+
+
+
+recieving system :
+always listening
+mixer is fed form the udp socket
+passes data to a source dataline which will then send data to speakers
+
+
+
+
+

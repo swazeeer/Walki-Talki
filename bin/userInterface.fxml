@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane layoutX="-388.0" layoutY="-286.0" orientation="VERTICAL" prefHeight="192.0" prefWidth="388.0">
+         <items>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="47.0" layoutY="40.0" mnemonicParsing="false" text="seggg" />
+               </children>
+            </Pane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
