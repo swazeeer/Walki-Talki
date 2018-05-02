@@ -19,6 +19,7 @@ public class Receiver implements Runnable {
 	
 	
 	public  Receiver()  {
+		// port to be used
 		PORT = 23189;
 		running = true;
 		
@@ -63,6 +64,8 @@ public class Receiver implements Runnable {
 		}
 	}
 }
+
+
 
 
 
